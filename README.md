@@ -66,3 +66,49 @@ To avoid future issues with gcc, it is recommended that we install multiple vers
 	    $ g++ --version
 
 ***Choose gcc-9***
+
+
+### Nvidia GPU
+
+**Step 1. Add PPA repository**
+	
+	sudo add-apt-repository ppa:graphics-drivers/ppa
+	
+**Step 2. Install Nvidia Drivers.**
+At the time of this writing, the latest Nvidia PPA driver is 460
+
+	sudo apt install nvidia-driver-460
+	
+**Step 3. Reboot system**
+
+	sudo reboot
+
+**Step 4. Check installed drivers**
+
+	nvidia-smi
+
+	Mon Apr 19 12:43:22 2021       
+	+-----------------------------------------------------------------------------+
+	| NVIDIA-SMI 460.67       Driver Version: 460.67       CUDA Version: 11.2     |
+	|-------------------------------+----------------------+----------------------+
+	| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+	| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+	|                               |                      |               MIG M. |
+	|===============================+======================+======================|
+	|   0  GeForce RTX 2060    Off  | 00000000:01:00.0  On |                  N/A |
+	| N/A   47C    P8     8W /  N/A |    379MiB /  5926MiB |      2%      Default |
+	|                               |                      |                  N/A |
+	+-------------------------------+----------------------+----------------------+
+
+	+-----------------------------------------------------------------------------+
+	| Processes:                                                                  |
+	|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+	|        ID   ID                                                   Usage      |
+	|=============================================================================|
+	|    0   N/A  N/A       923      G   /usr/lib/xorg/Xorg                 53MiB |
+	|    0   N/A  N/A      1650      G   /usr/lib/xorg/Xorg                126MiB |
+	|    0   N/A  N/A      1778      G   /usr/bin/gnome-shell              107MiB |
+	|    0   N/A  N/A      2487      G   ...AAAAAAAAA= --shared-files       80MiB |
+	+-----------------------------------------------------------------------------+
+
+
