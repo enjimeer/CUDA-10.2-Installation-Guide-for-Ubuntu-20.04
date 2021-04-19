@@ -150,9 +150,7 @@ Go to [CUDA Toolkit 10.2 archive](https://developer.nvidia.com/cuda-10.2-downloa
 
 ### Step 10. Check CUDA Version
 	nvcc --version
-export PATH=/usr/local/cuda/bin:$PATH  
-	export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-	
+
 ## CUDNN v7.6.5 Installation
 The following information is taken from the [Official cuDNN Documentation](https://docs.nvidia.com/deeplearning/cudnn/developer-guide/index.html) by NVIDIA
 
