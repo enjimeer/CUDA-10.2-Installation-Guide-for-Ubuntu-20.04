@@ -1,7 +1,6 @@
-# CUDA 10.2 Installation Guide
+# CUDA 10.2 & cuDNN 7.6.5 Installation Guide
 
-This repository contains the guide for installing CUDA 10.2 for Ubuntu 20.04 LTS. 
-For more information, please see the [official CUDA Toolkit Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements) by Nvidia
+This repository contains the guide for installing CUDA 10.2 and cuDNN 7.6.5 for Ubuntu 20.04 LTS. 
 
 ## Requirements
 
@@ -115,6 +114,8 @@ At the time of this writing, the latest Nvidia PPA driver is 460
 
 
 ## CUDA 10.2 Installation
+
+The following information is taken from the [official CUDA Toolkit Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements) by Nvidia
 
 
 ### Step 1. Download CUDA 10.2
